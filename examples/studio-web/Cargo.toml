@@ -1,0 +1,25 @@
+[package]
+name = "studio-web"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Trunk wrapper for PhysicsPlay Studio. egui is a default feature (the studio
+# UI is egui-based and runs on wasm; see the galileo-web lesson about
+# data-features not reaching cargo).
+
+[dependencies]
+kiss3d = { path = "../.." }
+egui = "0.36"
+physicsplay-core = { path = "../../physicsplay-core", features = ["serialize"] }
+env_logger = "0.11"
+web-time = "1"
+serde_json = "1"
+
+[target.wasm32-unknown-unknown.dependencies]
+getrandom = { version = "0.4", features = ["wasm_js"] }
+web-sys = { version = "0.3", features = ["console", "Window", "Document", "Element", "HtmlElement"] }
+
+[features]
+default = ["egui"]
+egui = ["kiss3d/egui"]

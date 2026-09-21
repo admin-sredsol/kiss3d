@@ -1,0 +1,211 @@
+{
+  "params": {
+    "gravity": [
+      0.0,
+      -9.81,
+      0.0
+    ],
+    "impact_threshold": 50.0
+  },
+  "entities": [
+    {
+      "translation": [
+        0.0,
+        -0.5,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            30.0,
+            0.5,
+            2.0
+          ]
+        }
+      },
+      "kind": "Fixed",
+      "material": {
+        "friction": 0.1,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            30.0,
+            0.5,
+            2.0
+          ]
+        }
+      },
+      "kind": "Fixed",
+      "material": {
+        "friction": 0.5,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        0.0,
+        -0.5,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            30.0,
+            0.5,
+            2.0
+          ]
+        }
+      },
+      "kind": "Fixed",
+      "material": {
+        "friction": 1.0,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        -15.0,
+        0.5,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "kind": "Dynamic",
+      "material": {
+        "friction": 0.1,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        -15.0,
+        0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "kind": "Dynamic",
+      "material": {
+        "friction": 0.5,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        -15.0,
+        0.5,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "kind": "Dynamic",
+      "material": {
+        "friction": 1.0,
+        "restitution": 0.0,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "program": null
+}

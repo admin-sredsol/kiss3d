@@ -1,0 +1,7 @@
+[build]
+target = "index.html"
+dist = "dist"
+
+[watch]
+# src/ plus the included example source, which lives outside this crate.
+watch = ["src", "../physics3d.rs"]

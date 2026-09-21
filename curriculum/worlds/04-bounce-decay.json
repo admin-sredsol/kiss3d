@@ -1,0 +1,75 @@
+{
+  "params": {
+    "gravity": [
+      0.0,
+      -9.81,
+      0.0
+    ],
+    "impact_threshold": 50.0
+  },
+  "entities": [
+    {
+      "translation": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Cuboid": {
+          "half_extents": [
+            20.0,
+            0.5,
+            20.0
+          ]
+        }
+      },
+      "kind": "Fixed",
+      "material": {
+        "friction": 0.2,
+        "restitution": 0.7,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation": [
+        0.0,
+        8.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "Sphere": {
+          "radius": 0.4
+        }
+      },
+      "kind": "Dynamic",
+      "material": {
+        "friction": 0.2,
+        "restitution": 0.7,
+        "density": 1.0
+      },
+      "angvel": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "program": null
+}

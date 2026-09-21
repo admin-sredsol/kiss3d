@@ -111,11 +111,14 @@ web-sys = { version = "0.3", features = [
     "EventTarget",
     "Element",
     "DomRect",
+    "Document",
 ] }
 
 [dev-dependencies]
 env_logger = "0.11"
 rand       = "0.10"
+serde_json = "1"
+physicsplay-core = { path = "physicsplay-core", features = ["serialize"] }
 
 [patch.crates-io]
 #glamx = { path = "../glamx" }

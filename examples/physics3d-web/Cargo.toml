@@ -1,0 +1,22 @@
+[package]
+name = "physics3d-web"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Trunk cannot build a cargo *example* directly, so this tiny wrapper crate
+# includes `examples/physics3d.rs` verbatim as its single bin target. The
+# example file remains the only place the demo code lives.
+
+[dependencies]
+kiss3d = { path = "../.." }
+physicsplay-core = { path = "../../physicsplay-core" }
+env_logger = "0.11"
+rand = "0.10"
+web-time = "1"
+
+# rand -> getrandom needs the js feature when targeting wasm; kiss3d's own
+# target deps enable it for the shared version, but declare it here too so
+# this crate is self-sufficient.
+[target.wasm32-unknown-unknown.dependencies]
+getrandom = { version = "0.4", features = ["wasm_js"] }

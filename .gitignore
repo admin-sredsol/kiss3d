@@ -7,6 +7,24 @@
 .DS_store
 cargo.lock
 Cargo.lock
+examples/physics3d-web/target/
+examples/physics3d-web/dist/
+examples/galileo-web/target/
+examples/galileo-web/dist/
+examples/studio-web/target/
+examples/studio-web/dist/
+
+# PhysicsPlay product layer — intentionally NOT part of this repository.
+# These three directories are maintained locally / separately and must
+# never be tracked or swept up by git add:
+physicsplay-core/
+physicsplay-wasm/
+physicsplay-web/
+
+# Generated tooling output (graphify knowledge graph)
+graphify-out/
+# Root-level local save dir for the native labs (NOT curriculum/worlds/)
+/worlds/
 target
 bin/camera
 bin/cube
